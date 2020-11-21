@@ -1,12 +1,17 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: brown;
+    color: whitesmoke;
+    width: auto;
+    height: auto;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    background-color: brown;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +27,25 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*.container {
+    background-color: tomato;
+    width: auto;
+    height: auto;
+    padding: 80px 0px 180px 10px;
+    border: 0px solid whitesmoke;
+    border-radius: 0px;
+    margin: 0px 160px 0px 160px;
+    font-size: 33px;
+}*/
+
+/*div.jumbotron {
+    background-color: forestgreen;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    border-radius: 0px;
+    font-family: monospace;
+    font-size: 33px;
+}*/

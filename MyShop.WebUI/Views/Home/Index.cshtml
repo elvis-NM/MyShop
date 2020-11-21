@@ -5,23 +5,60 @@
 }
 
 <h1>Products</h1>
-@foreach(var item in Model)
+@*foreach (var item in Model)
 {
-    <div class=" col-md-20" style="height:450px;padding:10px;margin:10px;border:solid thin white;"/>
-        <div class="col-md-15">
-            <img class="img" style="height:250px" src="~/Content/ProductImages/@item.Image" />
-        </div>
-        <div class="col-md-20">
-            <strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong>
-        </div>
-        <div class="col-md-20">
-            <p>@item.Description</p>
-        </div>
-        <div class="col-md-20">
-            <h4>@item.Price</h4>
-        </div>
-        <div class="col-md-20">
-            <a href="#" class="btn btn-default">Add to Basket</a>
-        </div>
-}
-    <div class="cold-md-20 clearfix"/>
+    <div class=" col-md-20" style="height:450px;padding:10px;margin:10px;border:solid thin white;" />
+    <div class="col-md-15">
+        <img class="img" style="height:250px" src="~/Content/ProductImages/@item.Image" />
+    </div>
+    <div class="col-md-20">
+        <h1></h1><strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong>
+    </div>
+    <div class="col-md-20">
+        <h1>@item.Description</h1>
+    </div>
+    <div class="col-md-20">
+        <h2>@item.Price</h2>
+    </div>
+    <div class="col-md-20">
+        <a href="#" class="btn btn-default">Add to Basket</a>
+    </div>*@
+
+    <table class="table">
+        @*<tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+      
+
+        </tr>*@
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div class=" col-md-20" style="height:450px;padding:10px;margin:10px;border:solid thin blue;" />
+                    <div class="col-md-15">
+                        <img class="img" style="height:300px" src="~/Content/ProductImages/@item.Image" />
+                        <span class="col-md-20">@item.Description</span> 
+                    </div>
+                    <div class="col-md-20">
+                        <h1><strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong></h1>
+                    </div>
+                  
+                    <div class="col-md-20">
+                        <h2>@item.Price
+                        <a href="#" class="btn btn-default">Add to Basket</a></h2>
+                    </div>
+              
+                </td>
+
+            
+            </tr>
+        }
+
+    </table>
+
+
+@*}*@
+<div class="cold-md-20 clearfix" />
