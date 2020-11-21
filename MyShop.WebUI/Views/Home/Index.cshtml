@@ -37,10 +37,11 @@
         {
             <tr>
                 <td>
-                    <div class=" col-md-20" style="height:450px;padding:10px;margin:10px;border:solid thin blue;" />
+                    <div class=" col-md-20" style="height:600px;padding:10px;margin:10px;border:solid thin blue;" />
                     <div class="col-md-15">
-                        <img class="img" style="height:300px" src="~/Content/ProductImages/@item.Image" />
-                        <span class="col-md-20">@item.Description</span> 
+                        <img class="img" style="height:450px; width:450px;" src="~/Content/ProductImages/@item.Image" />
+                      
+                        <span class="col-md-20">@item.Description</span>
                     </div>
                     <div class="col-md-20">
                         <h1><strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong></h1>
