@@ -13,6 +13,7 @@ namespace MyShop.WebUI.Tests.Controllers
     [TestClass]
     public class UnitTest1
     {
+        //check if page returns product 
         [TestMethod]
         public void IndexPageDoesReturnProducts()
         {
