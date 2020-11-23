@@ -25,10 +25,17 @@ namespace MyShop.WebUI.Controllers
         }
         public ActionResult UpdateOrder(string Id)
         {
+            ViewBag.StatusList = new List<string>()
+            {
+                "Order Created",
+                "Payment Processed",
+                "Order Shipped",
+                "Order Complete"
+            };
             Order order = orderService.GetOrder(Id);
             return View(order);
         }
-        
+        [HttpPost]
         public ActionResult UpdateOrder (Order updatedOrder, string Id)
         {
             Order order = orderService.GetOrder(Id);
