@@ -14,7 +14,7 @@ namespace MyShop.Core.Models
             this.OrderItems = new List<OrderItem>();
         }
 
-        public string FirstNme { get; set; }
+        public string FirstName { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
         public string Street { get; set; }
