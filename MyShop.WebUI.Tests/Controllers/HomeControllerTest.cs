@@ -2,11 +2,12 @@
 using MyShop.Core.Contracts;
 using MyShop.Core.Models;
 using MyShop.Core.ViewModels;
-using MyShop.WebUI;
+using MyShop.WebUI.Tests.Controllers;
 using MyShop.WebUI.Controllers;
 using System;
 using System.Linq;
 using System.Web.Mvc;
+using MyShop.WebUI.Tests.Controllers.Mocks;
 
 namespace MyShop.WebUI.Tests.Controllers
 {
